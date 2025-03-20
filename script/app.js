@@ -39,3 +39,20 @@ function createAListItem(item) {
 function toggleChecked() {
     this.classList.toggle("checked"); 
 }
+
+const form = select ('form');
+
+addEventListener(form, 'submit', addItem);
+
+function addItem(event) {
+    event.preventDefault();y
+
+    shoppingList.push(event.target[0]);
+
+    displayItems();
+
+    event.target.reset();
+}
+
+// const deleteButton = document.querySelector('.delete');
+const deleteButton = select
